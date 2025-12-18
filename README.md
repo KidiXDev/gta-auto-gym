@@ -27,11 +27,9 @@ The mod automatically deactivates when you stop exercising.
 ## Supported Gym Locations
 
 - Los Santos Gym
+- Verona Beach Gym
 - San Fierro Gym
 - Las Venturas Gym
-
-## Compability Notes
-> Currently only works with GTA San Andreas: Definitive Edition. for GTA III and GTA VC is untested.
 
 ## License
 
