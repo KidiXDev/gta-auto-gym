@@ -37,3 +37,15 @@ export const FREE_WEIGHT_ANIMATION = [
   "gym_free_putdown",
   "gym_free_up_smooth",
 ];
+
+export const TREADMILL_ANIMATION = [
+  "gym_jog_falloff",
+  "gym_tread_falloff",
+  "gym_tread_getoff",
+  "gym_tread_geton",
+  "gym_tread_jog",
+  "gym_tread_sprint",
+  "gym_tread_tired",
+  "gym_tread_walk",
+  "gym_walk_falloff",
+];

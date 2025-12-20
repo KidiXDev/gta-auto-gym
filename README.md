@@ -7,6 +7,7 @@ A CLEO Redux mod for **GTA San Andreas: Definitive Edition** that automatically 
 - **Auto Exercise Bike** — Automatically pedals the exercise bike
 - **Auto Bench Press** — Automatically performs bench press reps
 - **Auto Free Weights** — Automatically lifts free weights
+- **Auto Treadmill** — Automatically runs on the treadmill
 
 ## Installation
 
@@ -20,7 +21,7 @@ A CLEO Redux mod for **GTA San Andreas: Definitive Edition** that automatically 
 |-----|--------|
 | **F3** | Toggle auto-gym on/off |
 
-When you start a gym exercise (bike, bench press, or free weights), press **F3** to activate automatic input.
+When you start a gym exercise (bike, bench press, free weights or treadmill), press **F3** to activate automatic input.
 
 The mod automatically deactivates when you stop exercising.
 

@@ -3,6 +3,7 @@ import {
   GYM_INTERIOR_SF,
   GYM_INTERIOR_LV,
   BIKE_ANIMATIONS,
+  TREADMILL_ANIMATION,
   BENCH_PRESS_ANIMATION,
   FREE_WEIGHT_ANIMATION,
 } from "./constants";
@@ -63,8 +64,24 @@ export function isBenchPress(): boolean {
 }
 
 /**
+ * Returns true if the player is doing a treadmill animation
+ */
+export function isTreadmill(): boolean {
+  const player = new Player(0);
+  const playerChar = player.getChar();
+  for (const anim of TREADMILL_ANIMATION) {
+    if (playerChar.isPlayingAnim(anim)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
  * Returns true if the player is doing a gym exercise animation
  */
 export function isDoingGymExercise(): boolean {
-  return isRidingExerciseBike() || isFreeWeight() || isBenchPress();
+  return (
+    isRidingExerciseBike() || isFreeWeight() || isBenchPress() || isTreadmill()
+  );
 }
