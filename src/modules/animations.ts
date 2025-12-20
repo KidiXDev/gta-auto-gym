@@ -21,60 +21,26 @@ export function isInsideGym(): boolean {
   );
 }
 
-/**
- * Returns true if the player is doing an exercise bike animation
- */
+function isPlayingAnyAnim(animations: string[]): boolean {
+  const player = new Player(0);
+  const playerChar = player.getChar();
+  return animations.some((anim) => playerChar.isPlayingAnim(anim));
+}
+
 export function isRidingExerciseBike(): boolean {
-  const player = new Player(0);
-  const playerChar = player.getChar();
-  for (const anim of BIKE_ANIMATIONS) {
-    if (playerChar.isPlayingAnim(anim)) {
-      return true;
-    }
-  }
-  return false;
+  return isPlayingAnyAnim(BIKE_ANIMATIONS);
 }
 
-/**
- * Returns true if the player is doing a free weight animation
- */
 export function isFreeWeight(): boolean {
-  const player = new Player(0);
-  const playerChar = player.getChar();
-  for (const anim of FREE_WEIGHT_ANIMATION) {
-    if (playerChar.isPlayingAnim(anim)) {
-      return true;
-    }
-  }
-  return false;
+  return isPlayingAnyAnim(FREE_WEIGHT_ANIMATION);
 }
 
-/**
- * Returns true if the player is doing a bench press animation
- */
 export function isBenchPress(): boolean {
-  const player = new Player(0);
-  const playerChar = player.getChar();
-  for (const anim of BENCH_PRESS_ANIMATION) {
-    if (playerChar.isPlayingAnim(anim)) {
-      return true;
-    }
-  }
-  return false;
+  return isPlayingAnyAnim(BENCH_PRESS_ANIMATION);
 }
 
-/**
- * Returns true if the player is doing a treadmill animation
- */
 export function isTreadmill(): boolean {
-  const player = new Player(0);
-  const playerChar = player.getChar();
-  for (const anim of TREADMILL_ANIMATION) {
-    if (playerChar.isPlayingAnim(anim)) {
-      return true;
-    }
-  }
-  return false;
+  return isPlayingAnyAnim(TREADMILL_ANIMATION);
 }
 
 /**
